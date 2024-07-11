@@ -2,6 +2,9 @@ package p2p
 
 type Transport interface {
 	ListenAndAccept() error
+	Consume() <-chan RPC
 }
 
-type Peer interface{}
+type Peer interface {
+	Close() error
+}
