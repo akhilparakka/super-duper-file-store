@@ -7,8 +7,7 @@ import (
 )
 
 func OnPeer(peer p2p.Peer) error {
-	peer.Close()
-	// fmt.Println("Doing some logic with the peer outside the TCPTransport")
+	fmt.Println("Doing some logic with the peer outside the TCPTransport")
 	return nil
 }
 
